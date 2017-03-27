@@ -1,0 +1,20 @@
+ <section> 
+  <article class="events">
+    <h1>{{ events.title }}</h1>
+    <h2> Event id: {{events.id}}</h2>
+    <h4> When: {{events.startTime}}</h4>
+    <h5>Info: {{events.description}}</h5>
+  </article>
+  <article class="locations">
+  	<h3>Location:</h3>
+  	<address><a href="/locations/{{locations.id}}">{{locations.name}}</a></address>
+  </article>
+  
+  <article class="people">
+  	<h3>Attendees:</h3>
+  	{{#each people}}
+    <li><a href="/people/{{id}}">{{name}}</a></li>
+    {{/each}}
+  </article>
+  <footer><a href="/events/">Back to Events Page</a></footer>
+</section>

@@ -1,0 +1,12 @@
+{
+  "name": "lab3",
+  "version": "1.0.0",
+  "description": "Lab3 Asynchronous Code, Files, and Promises",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Matthew Colozzo",
+  "license": "MIT"
+}

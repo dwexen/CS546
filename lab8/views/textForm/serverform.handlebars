@@ -1,0 +1,38 @@
+<div class="row">
+  <div class="col-sm-12">
+    <form class="serverform-form" method="post">
+      <div class="form-group">
+        <textarea name="text" id="text" placeholder= "Enter Your Text Here">{{text}}</textarea>
+      </div>
+      <div class="form-group">
+        <label for="string">The Input String</label>
+        <input type="text" class="form-control" id="inputString" name="inputString" placeholder="enter a word or phrase" value="{{inputString}}">
+      </div>
+      <div class="form-group">
+        <label for="numTimes">Number of Times to Insert</label>
+        <input type="number" class="form-control" id="numTimes" name="numTimes" placeholder="Enter the number of times the word should occur" value="{{numTimes}}">
+      </div>
+      <div class="form-group">
+        <label for="numSpaces">Number of Spaces between each insert</label>
+        <input type="number" class="form-control" id="numSpaces" name="numSpaces" placeholder="Enter the number of spaces between each insert" value="{{numSpaces}}">
+      </div>
+      {{#if error }}
+      <div class="form-group">
+        <div class="alert alert-danger">
+          {{ error }}
+        </div>
+      </div>
+      {{/if}}
+      <div class="form-group">
+        <button type="submit" class="btn btn-default">Submit</button>
+      </div>
+      {{#if result }}
+      <div class="form-group">
+        <div class="alert alert-success">
+          {{ result }}
+        </div>
+      </div>
+      {{/if}}
+    </form>
+  </div>
+</div>

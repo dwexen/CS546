@@ -1,0 +1,15 @@
+ <section> 
+  <article class="locations">
+    <h1>{{ locations.name }}</h1>
+    <h2>Located in: {{ locations.location}}</h2>
+    <h3>Location ID: {{locations.id}}</h3>
+  </article>
+  
+  <article class="events">
+  	<h4>Events at this location:</h4>
+  	{{#each events}}
+    <li><a href="/events/{{id}}">{{title}}</a></li>
+    {{/each}}
+  </article>
+  <footer><a href="/locations/">Back to Locations Page</a></footer>
+</section>

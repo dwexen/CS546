@@ -1,0 +1,14 @@
+ <section> 
+  <article class="people">
+    <h1>{{ people.name }}</h1>
+    <h2>ID: {{ people.id}}</h2>
+  </article>
+  
+  <article class="events">
+    <h4>Going to:</h4>
+    {{#each events}}
+    <li><a href="/events/{{id}}">{{title}}</a></li>
+    {{/each}}
+  </article>
+  <footer><a href="/people/">Back to People Page</a></footer>
+</section>
